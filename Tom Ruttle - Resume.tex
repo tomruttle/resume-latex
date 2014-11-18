@@ -1,0 +1,66 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2011 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+%\PassOptionsToPackage{pdfpagelabels=false}{hyperref}
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[orange]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{marvosym}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths
+
+\usepackage{enumitem}
+
+\date{06/11/2014}
+
+\firstname{Tom}
+\familyname{Ruttle}
+\phone{07816 499253}
+\email{thruttle@gmail.com}
+\homepage{http://www.tomruttle.com}
+
+\begin{document}
+\maketitle
+
+Technologist with particular interests in APIs, micro-services and containers. Certified Scrum Master.
+
+\section{Experience}
+
+\cventry{2012--}{Developer}{BMJ}{London}{}{Lead developer for BMJ Quality and BMJ Careers WIRL API.
+\begin{itemize}[label=\textbullet]
+\item Designed and wrote the bulk of a Node.JS Hypermedia API supporting an Angular.JS front-end. Product was first-to-market due to our choices of technology and agile methodologies.
+\item Oversaw and managed the major refactoring of a large Drupal application: monolithic codebase was broken down into loosely-coupled modules.
+\item Investigated, prototyped, advocated, documented, and implemented a variety of DevOps tools. Now exclusively using a Docker cluster for development work.
+\item "Voice of technology" on steering committee for BMJ Outcomes. My role has been to assess the requirements of the customers (business team, end-users, and partners) and breaking them down into small, manageable functionalities that can be built as minimum-viable services.
+\item Presently building an XML document transformation/validation suite in Node.JS using the Seneca.JS micro-services framework. Have released an open-source npm module as part of this work.
+\end{itemize}}
+
+\cventry{2010--2012}{Drupal Product Consultant}{Firmstep}{Cambridge}{}{Delivering highly customised Drupal 7 websites to customers in the public sector as part of an agile team.
+\begin{itemize}[label=\textbullet]
+\item Devised and ran product training for groups of between two and twelve and all levels of IT experience.
+\item Wrote documentation for both internal and customer use
+\item Liaised between project management, customers, and developers
+\end{itemize}}
+
+\cventry{2005--2010}{Intern}{Firmstep}{Cambridge}{}{Built e-forms for customers in the public sector; acted as consultant to customers for company products; tested new releases of company products; some first-line support}{}
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{2006--2010}{\small{Master of Physics (MPHYS) in Physics with Philosophy}}{\newline{}University of York}{}{\small{Grade: \textit{2:1}}}{}
+\cventry{2003--2005}{A-Levels in Computing, Maths, Economics, Physics}{\newline{}Hills Road Sixth Form College}{Cambridge}{Grades (respectively): \textit{A, B, B, B}}{}
+
+\section{Extra-Curricular}
+
+\cvline{Skydiving}{\small{Participated in 42-way formations in Summer 2014.\newline{}Have competed in 4-way Nationals competitions from 2010-2014.\newline{}Won silver medal in national 8-way skydiving championships, Rookie class, 2011.\newline{}University Colours awarded for service to University of York Skydiving Club. Positions held: Member (2006--2008); Social Secretary (2008--2009); Treasurer (2009--2010).}}
+
+\end{document}
