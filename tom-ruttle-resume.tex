@@ -1,0 +1,101 @@
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref}
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[orange]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+
+\usepackage[utf8]{inputenc}
+\usepackage{marvosym}
+\usepackage[scale=0.8]{geometry}
+
+\recomputelengths
+
+\usepackage{enumitem}
+
+\date{06/11/2014}
+
+\firstname{Tom}
+\familyname{Ruttle}
+\homepage{https://www.tomruttle.com}
+\email{tom@tomruttle.com}
+
+\begin{document}
+
+\maketitle
+
+Technologist with particular interests in APIs, micro-services and containers. Certified Scrum Master. Mostly working with Node.js.
+
+\section{Experience}
+
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+\cventry
+  {2012--}
+  {Developer}
+  {BMJ}
+  {London}
+  {}
+  {
+    Lead developer for BMJ Quality and BMJ Job Reviews API.
+    \begin{itemize}[label=\textbullet]
+      \item Designed and wrote the bulk of a Node.js Hypermedia API supporting an Angular.js front-end. Product was first-to-market due to our choices of technology and agile methodology.
+      \item Oversaw and managed the major refactoring of a large Drupal application: monolithic codebase was broken down into loosely-coupled modules.
+      \item Investigated, prototyped, advocated, documented, and implemented a variety of DevOps tools. Now exclusively using Docker clusters for development work, have built tools for other developers, and am involved in the development of Puppet modules for Docker orchestration.
+      \item "Voice of technology" on a steering committee. I have been assessing the requirements of customers (business team, end-users, and partners) and breaking them down into services.
+      \item Current project is an XML document transformation/validation suite built in a functional reactive style in Node.js. It utilises the Seneca.js micro-services framework and has 99\% Mocha test coverage.
+    \end{itemize}
+  }
+
+\cventry
+  {2010--2012}
+  {Drupal Product Consultant}
+  {Firmstep}
+  {Cambridge}
+  {}
+  {
+    Delivering highly customised Drupal 7 websites to customers in the public sector as part of an agile team.
+    \begin{itemize}[label=\textbullet]
+      \item Devised and ran product training for groups of between two and twelve and all levels of IT experience.
+      \item Wrote documentation for both internal and customer use
+      \item Liaised between project management, customers, and developers
+    \end{itemize}
+  }
+
+\cventry
+  {2005--2010}
+  {Intern}
+  {Firmstep}
+  {Cambridge}
+  {}
+  {
+    Built e-forms for customers in the public sector; acted as consultant to customers for company products; tested new releases of company products; some first-line support
+  }
+
+\section{Education}
+
+\cventry
+  {2006--2010}
+  {\small{Master of Physics (MPHYS) in Physics with Philosophy}}
+  {\newline{}University of York}
+  {}
+  {\small{Grade: \textit{2:1}}}
+  {}
+
+\cventry
+  {2003--2005}
+  {A-Levels in Computing, Maths, Economics, Physics}
+  {\newline{}Hills Road Sixth Form College}
+  {Cambridge}
+  {Grades (respectively): \textit{A, B, B, B}}
+  {}
+
+\section{Extra-Curricular}
+
+\cvline{Skydiving}{
+  \small{Participated in 42-way formations in Summer 2014.}
+  \newline{}\small{Have competed in 4-way Nationals competitions from 2010-2014.}
+  \newline{}\small{Won silver medal in national 8-way skydiving championships, Rookie class, 2011.}
+  \newline{}\small{University Colours awarded for service to University of York Skydiving Club. Positions held: Member (2006--2008); Social Secretary (2008--2009); Treasurer (2009--2010).}
+}
+
+\end{document}
