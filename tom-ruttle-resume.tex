@@ -1,73 +1,77 @@
-\documentclass[10pt,a4paper,sans]{moderncv}
+\documentclass[11pt, a4paper, sans]{moderncv}
 
 \moderncvstyle{classic}
 \moderncvcolor{burgundy}
 \nopagenumbers{}
+\linespread{1.15}
 
 \usepackage[utf8]{inputenc}
 \usepackage{textcomp}
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.84]{geometry}
 
 \date{11/08/2018}
 
 \name{Tom}{Ruttle}
 \email{tom@tomruttle.com}
-\homepage{www.tomruttle.com}
 \social[github]{tomruttle}
+\quote{Writes high-quality JavaScript, mostly using the MERN stack.}
 
 \begin{document}
 
 \makecvtitle
 
-Technologist with particular interests in APIs, micro-services and containers. Certified Scrum Master. Mostly working with Node.js.
-
 \section{Technologies}
 
-\begin{cvcolumns}
-  \cvcolumn
-    {Javascript}
-    {
-      \begin{itemize}
-        \item Node.js
-        \item React
-        \item Redux
-        \item Flow
-      \end{itemize}
-    }
+\small{
+  \begin{cvcolumns}
+    \cvcolumn
+      {Javascript}
+      {
+        \begin{itemize}
+          \item Node.js
+          \item React
+          \item Redux
+          \item Flow
+        \end{itemize}
+      }
 
-  \cvcolumn
-    {Tooling}
-    {
-      \begin{itemize}
-        \item Webpack
-        \item Babel
-        \item Eslint
-        \item Git
-      \end{itemize}
-    }
+    \cvcolumn
+      {Tools}
+      {
+        \begin{itemize}
+          \item Webpack
+          \item Babel
+          \item Eslint
+          \item Git
+        \end{itemize}
+      }
 
-  \cvcolumn
-    {Infrastructure}
-    {
-      \begin{itemize}
-        \item Docker
-        \item Mongodb
-        \item Jenkins
-        \item New Relic
-      \end{itemize}
-    }
+    \cvcolumn
+      {Infrastructure}
+      {
+        \begin{itemize}
+          \item Docker
+          \item MongoDB
+          \item Jenkins
+          \item New Relic
+        \end{itemize}
+      }
 
-  \cvcolumn
-    {Concepts}
-    {
-      \begin{itemize}
-        \item Isomorphic JS
-        \item Microservices
-        \item XP
-        \item Remote-first
-      \end{itemize}
-    }
-\end{cvcolumns}
+    \cvcolumn
+      {Concepts}
+      {
+        \begin{itemize}
+          \item Isomorphic JS
+          \item Microservices
+          \item XP
+          \item Remote-first
+        \end{itemize}
+      }
+  \end{cvcolumns}
+}
+
+% TODO Why does moderncv add so much space beneath cvcolumns?
+\vspace*{-5mm}
 
 \section{Experience}
 
@@ -75,47 +79,51 @@ Technologist with particular interests in APIs, micro-services and containers. C
   {2015--}
   {Software Engineer $\,\to\,$ Senior Software Engineer}
   {Tes}
-  {Remote}
-  {}
+  {London $\,\to\,$ Remote}
+  {www.tes.com}
   {
-    Stuff
+    Part of an agile, cross-functional team incrementally improving our products for educators and students around the globe. Recently focussed on our \emph{Employer Portal}.
     \begin{itemize}
-      \item Interviews
-      \item Mentoring
-      \item React
-      \item Project Parent
-      \item Code quality
+      \item Recognised for writing maintainable, testable, readable code whether working on greenfield projects, large-scale refactors, or legacy-code maintenance.
+      \item Instrumental in the adoption of much of the technology stack, and many of the coding patterns, now used across the department.
+      \item Ran the technical portion of our Engineer interviews (an hour-long code-pairing exercise).
+      \item Mentor for other Engineers in the department.
+      \item \emph{Project Parent}. Entails gathering technical requirements, writing story tickets, and managing resources.
     \end{itemize}
   }
+
+\vspace*{3mm}
 
 \cventry
   {2012--2015}
   {Junior Drupal Developer $\,\to\,$ Developer}
   {BMJ}
   {London}
-  {}
+  {www.bmj.com}
   {
-    Lead developer for BMJ Quality and BMJ Job Reviews API.
+    Lead developer and part-time SCRUM master for BMJ Quality and BMJ Job Reviews API.
     \begin{itemize}
-      \item Self-taught PHP \& Drupal, then later Node.js \& Angular.js on the job
-      \item Oversaw and managed the major refactoring of a large Drupal application: monolithic codebase was broken down into loosely-coupled modules.
-      \item "Voice of technology" on a steering committee
-      \item Designed and wrote the bulk of a Node.js Hypermedia API supporting an Angular 1.0 front-end.
+      \item Self-taught PHP \& Drupal, and later Node.js \& Angular.js.
+      \item Managed major refactor of a large Drupal application: monolithic codebase was broken down into loosely-coupled modules.
+      \item \emph{Voice of Technology} on a company steering committee.
+      \item Designed and wrote the bulk of a Node.js hypermedia API supporting an Angular 1.0 front-end.
     \end{itemize}
   }
+
+\vspace*{3mm}
 
 \cventry
   {2010--2012}
   {Drupal Product Consultant}
   {Firmstep}
-  {Cambridge}
-  {}
+  {Cambridge $\,\to\,$ Remote}
+  {www.firmstep.com}
   {
-    Delivering highly customised Drupal 7 websites to customers in the public sector as part of an agile team.
+    Delivering highly-customised Drupal 7 websites to customers in the public sector.
     \begin{itemize}
-      \item Devised and ran product training for groups of between two and twelve and all levels of IT experience.
-      \item Wrote documentation for both internal and customer use
-      \item Liaised between project management, customers, and developers
+      \item Devised and ran training for groups of up to a dozen people at all levels of IT experience.
+      \item Wrote documentation for both internal and customer use.
+      \item Liaised between project management, customers, and developers.
     \end{itemize}
   }
 
@@ -128,7 +136,7 @@ Technologist with particular interests in APIs, micro-services and containers. C
   {}
   {2:1}
   {
-    Subject of thesis was a computational model of a quantum particle written in FORTRAN95.
+    Thesis required computationally modelling a quantum particle using Fortran 95.
   }
 
 \section{Extra-Curricular}
@@ -136,13 +144,15 @@ Technologist with particular interests in APIs, micro-services and containers. C
 \cvitem
   {Travel}
   {
-    Full-time nomad since January 2016, and have lived in (and worked from) dozens of places around the world including Lima, Tokyo, New York, Taipei, Cape Town, and Belgrade. Recently semi-settled in Berlin.
+    Peripatetic since 2016. Lived and worked in dozens of cities including Lima, Tokyo, New York, Taipei, Cape Town, and Belgrade. Recently semi-settled in Berlin.
   }
+
+\vspace*{3mm}
 
 \cvitem
   {Skydiving}
   {
-    Was an amateur skydiver from 2006-2014, with over 500 descents completed. Highlights were participating in a 42-way formation in Summer 2014 and winning silver in my category at the national 8-way skydiving championships in 2011.
+    Amateur skydiver from 2006--2014 with over 500 descents. Highlights include participating in a 42-way formation in 2014 and winning a silver medal at the UK 8-Way Skydiving Championships in 2011.
   }
 
 \end{document}
