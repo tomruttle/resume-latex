@@ -7,31 +7,41 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{textcomp}
-\usepackage[scale=0.84]{geometry}
+\usepackage[scale=0.9]{geometry}
 
-\date{11/08/2018}
+\date{02/02/2022}
 
 \name{Tom}{Ruttle}
 \email{tom@tomruttle.com}
 \social[github]{tomruttle}
-\quote{Writes high-quality JavaScript, mostly using the MERN stack.}
 
 \begin{document}
 
 \makecvtitle
 
-\section{Technologies}
+% TODO Why does moderncv add so much space beneath cvcolumns?
+\vspace*{-10mm}
+
+\section{Overview}
 
 \small{
   \begin{cvcolumns}
     \cvcolumn
-      {Javascript}
+      {Languages}
       {
         \begin{itemize}
-          \item Node.js
-          \item React
-          \item Redux
-          \item Flow
+          \item Typescript
+          \item Golang
+        \end{itemize}
+      }
+
+    \cvcolumn
+      {Team}
+      {
+        \begin{itemize}
+          \item Servant-Leadership
+          \item Remote-First
+          \item XP
         \end{itemize}
       }
 
@@ -39,21 +49,9 @@
       {Tools}
       {
         \begin{itemize}
-          \item Webpack
-          \item Babel
-          \item Eslint
-          \item Git
-        \end{itemize}
-      }
-
-    \cvcolumn
-      {Infrastructure}
-      {
-        \begin{itemize}
           \item Docker
-          \item MongoDB
-          \item Jenkins
-          \item New Relic
+          \item Kubernetes
+          \item Terraform
         \end{itemize}
       }
 
@@ -61,10 +59,9 @@
       {Concepts}
       {
         \begin{itemize}
-          \item Isomorphic JS
           \item Microservices
-          \item XP
-          \item Remote-first
+          \item Infrastructure As Code
+          \item Quality
         \end{itemize}
       }
   \end{cvcolumns}
@@ -76,19 +73,42 @@
 \section{Experience}
 
 \cventry
-  {2015--}
+  {2019--}
+  {Senior Consultant $\,\to\,$ Lead Consultant}
+  {Thoughtworks}
+  {Berlin}
+  {www.thoughtworks.com}
+  {
+		Consultant developer applying agile methodologies to solve a variety of technology-adjacent problems.
+    \begin{itemize}
+      \item Currently leading a team of engineers delivering the navigation component of a brand homepage (1M+ monthly unique pageviews)
+			\begin{itemize}
+				\item micro-frontend architecture, AWS infrastructure
+			\end{itemize}
+			\item Led a team of a dozen engineers, distributed between Germany and India, that delivered cloud functionality for an enterprise IOT R\&D project
+			\begin{itemize}
+				\item golang microservices, Azure infrastructure
+			\end{itemize}
+			\item \emph{Performance Partner}: Responsible for joint goal setting and assessment for five engineers
+    \end{itemize}
+	}
+
+\vspace*{3mm}
+
+\cventry
+  {2015--2019}
   {Software Engineer $\,\to\,$ Senior Software Engineer}
   {Tes}
   {London $\,\to\,$ Remote}
   {www.tes.com}
   {
-    Part of an agile, cross-functional team incrementally improving our products for educators and students around the globe. Recently focussed on our \emph{Employer Portal}.
+    Part of an agile, cross-functional team incrementally improving products for educators and students around the globe. Mostly focussed on the \emph{Employer Portal}.
     \begin{itemize}
       \item Recognised for writing maintainable, testable, readable code whether working on greenfield projects, large-scale refactors, or legacy-code maintenance.
       \item Instrumental in the adoption of much of the technology stack, and many of the coding patterns, now used across the department.
       \item Ran the technical portion of our Engineer interviews (an hour-long code-pairing exercise).
       \item Mentor for other Engineers in the department.
-      \item \emph{Project Parent}. Entails gathering technical requirements, writing story tickets, and managing resources.
+      \item \emph{Project Parent}: Entailed gathering technical requirements, writing story tickets, and managing resources.
     \end{itemize}
   }
 
@@ -142,17 +162,17 @@
 \section{Extra-Curricular}
 
 \cvitem
-  {Travel}
+  {CKA}
   {
-    Peripatetic since 2016. Lived and worked in dozens of cities including Lima, Tokyo, New York, Taipei, Cape Town, and Belgrade. Recently semi-settled in Berlin.
+		Working towards the Certified Kubernetes Administrator exam.
   }
 
 \vspace*{3mm}
 
 \cvitem
-  {Skydiving}
+	{Homelab}
   {
-    Amateur skydiver from 2006--2014 with over 500 descents. Highlights include participating in a 42-way formation in 2014 and winning a silver medal at the UK 8-Way Skydiving Championships in 2011.
+		Provisioning and tinkering with a bare-metal k8s cluster.
   }
 
 \end{document}
